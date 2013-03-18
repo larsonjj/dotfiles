@@ -44,7 +44,7 @@ Some Examples (I use the Git Credentials section in my own .extras file):
 
 ```bash
 # PATH additions
-export PATH="~/bin:~/local: ~/custom"
+export PATH="~/bin:~/local:~/custom"
 
 # Alias Overrides
 alias ls='ls -la'
@@ -85,5 +85,5 @@ Suggestions
 
 ## Thanks to…
 
-* Mathias Bynens for sharing his [awesome collection of dotfiles](https://github.com/mathiasbynens/dotfiles)
+Mathias Bynens for sharing his [awesome collection of dotfiles](https://github.com/mathiasbynens/dotfiles)
 You are a Gentleman and a Scholar!
