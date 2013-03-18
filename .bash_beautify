@@ -34,7 +34,7 @@ svn_prompt() {
         fi
 
         # Only show if we are in an SVN repo dir (add r$rev if you want to show the revision)
-        echo "($branch$status) "
+        echo "[$branch$status]"
     fi
 }
 
@@ -55,7 +55,7 @@ svn_parse_branch() {
             fi
         fi
     fi
-    echo $chunk;
+    echo $chunk | awk -F '/' '{print $3,$4;}' # /branches/$3/$4 (add /$5, /$6, etc to output more subdirectories)
 }
 
 # add colored output to svn commands
@@ -2817,8 +2817,6 @@ On_IWhite='\[\033[0;107m\]'   # White
 Gray='\[\033[1;30m\]'
 Black_On_Green='\[\033[7;92m\]'
 
-#!/bin/bash
-
 type __git_ps1 > /dev/null 2>&1
 PS1_GIT_NOT_AVAILABLE=$?
 
@@ -2835,7 +2833,7 @@ function prompt_command {
     local prompt_len=$((${#usern}+${#hostn}+4))
 
     # Add username@hostname to PS1
-    PS1="$BRed$usern$Gray at$BIYellow $hostn$Color_Off"
+    PS1="$BRed$usern$Gray@$BIYellow$hostn$Color_Off"
 
     # Construct directory path string no more than 40 chars long
     if [ ${#PWD} -gt 40 ];
@@ -2845,14 +2843,12 @@ function prompt_command {
         local working_dir=$PWD
     fi
 
-
-
     # Calculate size with working dir
     let new_prompt_len=${prompt_len}+${#working_dir}+3
     if [ ${new_prompt_len} -lt ${COLUMNS} ];
     then
         let prompt_len=${new_prompt_len}
-        PS1="$PS1$Gray in $BIGreen\w "
+        PS1="$PS1$Gray: $BIGreen\w "
     fi
 
     # Space that git_ps1 will take
