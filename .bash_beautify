@@ -70,8 +70,8 @@ function set_git_branch {
   BRANCH="${state}[${branch}]${remote}"
 }
 
-# Determine the branch information for this subversion repository (Will go up to three levels deep within your branching/tag structure). No support
-# for svn status, since that needs to hit the remote repository.
+# Determine the branch information for this subversion repository (Will go on level deep within your branching/tag structure).
+# No support for svn status, since that needs to hit the remote repository.
 function set_svn_branch {
   # Capture the output of the "git status" command.
   svn_info="$(svn info | egrep '^URL: ' 2> /dev/null)"
@@ -79,11 +79,8 @@ function set_svn_branch {
   # Get the name of the branch.
   branch_pattern="^URL: .*/(branches|tags)/([^/]+)"
   branch_pattern_one_deep="^URL: .*/(branches|tags)/([^/]+)/([^/]+)"
-  branch_pattern_two_deep="^URL: .*/(branches|tags)/([^/]+)/([^/]+)/([^/]+)"
   trunk_pattern="^URL: .*/trunk(/.*)?$"
-  if [[ ${svn_info} =~ $branch_pattern_two_deep ]]; then
-    branch=${BASH_REMATCH[4]}
-  elif [[ ${svn_info} =~ $branch_pattern_one_deep ]]; then
+  if [[ ${svn_info} =~ $branch_pattern_one_deep ]]; then
     branch=${BASH_REMATCH[3]}
   elif [[ ${svn_info} =~ $branch_pattern ]]; then
     branch=${BASH_REMATCH[2]}
