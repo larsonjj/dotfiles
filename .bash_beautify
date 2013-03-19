@@ -81,7 +81,7 @@ function set_svn_branch {
   branch_pattern_one_deep="^URL: .*/(branches|tags)/([^/]+)/([^/]+)"
   trunk_pattern="^URL: .*/trunk(/.*)?$"
   if [[ ${svn_info} =~ $branch_pattern_one_deep ]]; then
-    branch=${BASH_REMATCH[3]}
+    branch=${BASH_REMATCH[2]}"/"${BASH_REMATCH[3]}
   elif [[ ${svn_info} =~ $branch_pattern ]]; then
     branch=${BASH_REMATCH[2]}
   elif [[ ${svn_info} =~ $trunk_pattern ]]; then
