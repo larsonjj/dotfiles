@@ -1,5 +1,5 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
+# Add `~/bin` and `/usr/local/share/npm/bin' (to use npm after node.js homebrew install) to the `$PATH`
+export PATH="$HOME/bin:/usr/local/share/npm/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
