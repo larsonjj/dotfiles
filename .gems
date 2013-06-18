@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Install Ruby Gems
+gem update --system # Update Gems
+
+# Compass SASS Framework
+gem install compass
