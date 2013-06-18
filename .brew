@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Install Homebrew
+# Install Homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
 # Make sure we’re using the latest Homebrew

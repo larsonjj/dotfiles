@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Install Npms
+
+# Grunt (JS Task Runner)
+npm uninstall -g grunt # Remove existing
+npm install -g grunt-cli
+
+# Express Framework
+npm uninstall -g express # Remove existing
+npm install -g express
