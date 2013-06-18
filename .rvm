@@ -1,0 +1,23 @@
+#!/bin/bash
+## Set Up RVM (Ruby Version Manager)
+
+# Go To Home Directory
+cd
+
+# Install RVM
+curl -L get.rvm.io | bash
+
+# Use RVM in current shell
+source ~/.rvm/scripts/rvm
+
+# Get All Requirements
+rvm requirements
+
+# Get Latest RVM
+rvm get head
+
+# Install Ruby 2.0.0
+rvm install 2.0.0
+
+# Check Ruby Version
+ruby -v

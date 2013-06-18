@@ -1,5 +1,5 @@
 # Add `~/bin` and `/usr/local/share/npm/bin' (to use npm after node.js homebrew install) to the `$PATH`
-export PATH="$HOME/bin:/usr/local/share/npm/bin:$PATH"
+export PATH="$HOME/bin:$PATH:/usr/local/share/npm/bin"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -34,3 +34,6 @@ complete -W "NSGlobalDomain" defaults
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+# Load RVM (Ruby Version Manager) into Terminal Session
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

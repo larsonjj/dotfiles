@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Install Homebrew
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+
 # Make sure we’re using the latest Homebrew
 brew update
 
@@ -16,6 +19,32 @@ brew install node # NodeJS Webserver
 brew install rename # Batch Renaming
 brew install tree # View Directory Tree
 brew install webkit2png # Get Full Webpage Screenshots
+brew install postgres # PostgreSQL Database
+
+
+# Install native apps
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+function installcask() {
+	if brew cask info "${@}" | grep "Not installed" > /dev/null; then
+		brew cask install "${@}"
+	else
+		echo "${@} is already installed."
+	fi
+}
+
+installcask dropbox
+installcask google-chrome
+installcask google-chrome-canary
+installcask imagealpha
+installcask imageoptim
+installcask iterm2
+installcask sublime-text
+installcask the-unarchiver
+installcask tor-browser
+installcask virtualbox
+installcask vlc
 
 # Remove outdated versions from the cellar
 brew cleanup
