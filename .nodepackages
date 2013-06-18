@@ -15,3 +15,13 @@ sudo npm install -g grunt-cli
 # Express Framework
 sudo npm uninstall -g express # Remove existing
 sudo npm install -g express
+
+# Yeoman & Generator (Scaffold Webapps)
+npm uninstall -g yo # Remove existing
+npm install -g yo
+npm uninstall -g generator-webapp # Remove existing
+npm install -g generator-webapp
+
+# Twitter Bower (Handles Dependencies)
+npm uninstall -g bower
+npm install -g bower
