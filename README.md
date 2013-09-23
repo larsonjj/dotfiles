@@ -78,6 +78,35 @@ When setting up a new Mac, you may want to install some common Homebrew formulae
 sh ~/.brew
 ```
 
+### Install RVM (Ruby Version Manager)
+
+```bash
+sh ~/.rvninstall
+```
+
+### Install Ruby Gems
+
+```bash
+sh ~/.gems
+```
+
+### Install Node Packages
+
+```bash
+sh ~/.nodepackages
+```
+
+### Setup SVN External Diff Tool: FileMerge (OSX)
+
+Edit your subversion config file:
+
+```bash
+### ~/.subversion/config
+### Add this line to the [helpers] section
+
+diff-cmd = ~/bin/svn-diff.sh
+```
+
 ## I Like Feedback
 
 Suggestions
