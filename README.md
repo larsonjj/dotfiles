@@ -102,9 +102,9 @@ Edit your subversion config file:
 
 ```bash
 ### ~/.subversion/config
-### Add this line to the [helpers] section
+### Add this line to the [helpers] section (Must use absolute path)
 
-diff-cmd = ~/bin/svn-diff.sh
+diff-cmd = /Users/username/bin/svn-diff.sh
 ```
 
 ## I Like Feedback
