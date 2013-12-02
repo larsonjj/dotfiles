@@ -103,3 +103,8 @@ done
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
+
+# Apache
+alias aconf="sudo subl /etc/apache2/httpd.conf"
+alias vhosts="sudo subl /etc/apache2/extra/httpd-vhosts.conf"
+alias hosts="sudo subl /etc/hosts"
