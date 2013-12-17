@@ -108,3 +108,6 @@ alias pumpitup="osascript -e 'set volume 7'"
 alias aconf="sudo subl /etc/apache2/httpd.conf"
 alias vhosts="sudo subl /etc/apache2/extra/httpd-vhosts.conf"
 alias hosts="sudo subl /etc/hosts"
+
+# Sublime Text 3
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
