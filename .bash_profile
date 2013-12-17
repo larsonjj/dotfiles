@@ -1,6 +1,8 @@
 # Add `~/bin` and `/usr/local/share/npm/bin' (to use npm after node.js homebrew install) to the `$PATH`
 export PATH="$HOME/bin:$PATH:/usr/local/share/npm/bin"
 
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
