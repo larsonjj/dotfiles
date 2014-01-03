@@ -6,7 +6,7 @@
 ### ~/.subversion/config
 ### Add this line to the [helpers] section
  
-# diff-cmd = ~/bin/svn-diff.sh
+# diff-cmd = /Users/yourUsername/bin/svn-diff.sh
 
 ##################################################
 ### Configure your favorite diff program here. ###
