@@ -20,6 +20,7 @@ brew install rename # Batch Renaming
 brew install tree # View Directory Tree
 brew install webkit2png # Get Full Webpage Screenshots
 brew install postgres # PostgreSQL Database
+brew install android-sdk # android sdk
 
 
 # Install native apps
@@ -39,10 +40,7 @@ installcask google-chrome
 installcask google-chrome-canary
 installcask imagealpha
 installcask imageoptim
-installcask iterm2
-installcask sublime-text
 installcask the-unarchiver
-installcask tor-browser
 installcask virtualbox
 installcask vlc
 
