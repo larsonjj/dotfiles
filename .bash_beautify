@@ -86,9 +86,7 @@ function set_svn_branch {
     branch=${BASH_REMATCH[2]}
   elif [[ ${svn_info} =~ $trunk_pattern ]]; then
     branch='trunk'
-  fi
-  
-  if [[ -z "$branch" ]]; then
+  else
     branch='svn'
   fi
 
