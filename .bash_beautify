@@ -87,6 +87,10 @@ function set_svn_branch {
   elif [[ ${svn_info} =~ $trunk_pattern ]]; then
     branch='trunk'
   fi
+  
+  if [[ -z "$branch" ]]; then
+    branch='svn'
+  fi
 
   # Set the final branch string.
   BRANCH="[${branch}] "
