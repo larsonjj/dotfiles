@@ -22,27 +22,5 @@ brew install webkit2png # Get Full Webpage Screenshots
 brew install postgres # PostgreSQL Database
 brew install android-sdk # android sdk
 
-
-# Install native apps
-brew tap phinze/homebrew-cask
-brew install brew-cask
-
-function installcask() {
-	if brew cask info "${@}" | grep "Not installed" > /dev/null; then
-		brew cask install "${@}"
-	else
-		echo "${@} is already installed."
-	fi
-}
-
-installcask dropbox
-installcask google-chrome
-installcask google-chrome-canary
-installcask imagealpha
-installcask imageoptim
-installcask the-unarchiver
-installcask virtualbox
-installcask vlc
-
 # Remove outdated versions from the cellar
 brew cleanup
