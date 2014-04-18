@@ -111,9 +111,3 @@ alias hosts="sudo subl /etc/hosts"
 
 # Sublime Text 3
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-
-# SVN
-# Remove all unversioned files
-alias svnra="svn status | grep '^?' | awk '{print $2}' | xargs rm -rf"
-# Add all unversioned files
-alias svnaa="svn add `svn status|grep '\?'|awk '{print $2}'`"
