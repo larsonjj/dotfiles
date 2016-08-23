@@ -1,0 +1,35 @@
+// Place your settings in this file to overwrite the default settings
+{
+	// Controls the font family.
+	"editor.fontFamily": "Inconsolata-dz",
+
+	// Controls the font size.
+	"editor.fontSize": 13,
+
+	// Controls the line height.
+	"editor.lineHeight": 0,
+
+	// Controls visibility of line numbers
+	"editor.lineNumbers": true,
+	
+	// Controls the rendering size of tabs in characters. Accepted values: "auto", 2, 4, 6, etc. If set to "auto", the value will be guessed when a file is opened.
+	"editor.tabSize": 2,
+
+	// Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
+	"editor.insertSpaces": true,
+	
+	// Controls whether the editor should render whitespace characters
+	"editor.renderWhitespace": true,
+  
+  // Enable ESLint
+  "eslint.enable": true,
+
+  "javascript.validate.enable": false,
+
+  // Format Elm code on save
+  "elm.formatOnSave": true,
+
+  "files.autoSave": "off",
+
+  "editor.rulers": [80]
+}
