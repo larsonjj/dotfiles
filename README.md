@@ -90,23 +90,6 @@ sh ~/.rvninstall
 sh ~/.gems
 ```
 
-### Install Node Packages
-
-```bash
-sh ~/.nodepackages
-```
-
-### Setup SVN External Diff Tool: FileMerge (OSX)
-
-Edit your subversion config file:
-
-```bash
-### ~/.subversion/config
-### Add this line to the [helpers] section (Must use absolute path)
-
-diff-cmd = /Users/username/bin/svn-diff.sh
-```
-
 ## I Like Feedback
 
 Suggestions
