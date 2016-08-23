@@ -9,6 +9,9 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
+# Install Homebrew Cask
+brew tap caskroom/cask
+
 # Install wget with IRI support
 brew install wget --enable-iri
 
@@ -20,6 +23,8 @@ brew install rename # Batch Renaming
 brew install tree # View Directory Tree
 brew install webkit2png # Get Full Webpage Screenshots
 brew install postgres # PostgreSQL Database
+brew cask install caskroom/fonts/font-hack # Hack font
+brew cask install visual-studio-code # Visual Studio Code
 
 # Remove outdated versions from the cellar
 brew cleanup
