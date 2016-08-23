@@ -62,12 +62,12 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository.
 
-### Install OS X defaults
+### Install macOS defaults
 
-When setting up a new Mac, you may want to set some sensible OS X defaults (via shell script):
+When setting up a new Mac, you may want to set some sensible defaults (via shell script):
 
 ```bash
-sh ~/.osx
+sh ~/.macos
 ```
 
 ### Install Homebrew Settings
