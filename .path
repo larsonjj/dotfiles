@@ -1,0 +1,8 @@
+# Add custom programs
+export PATH="$PATH:$HOME/bin"
+
+# Add NPM
+export PATH="$PATH:/usr/local/share/npm/bin"
+
+# Add elm-format
+export PATH="$PATH:$HOME/bin/elm-format"
