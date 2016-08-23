@@ -7,13 +7,32 @@ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 brew update
 
 # Upgrade any already-installed formulae
-brew upgrade
+brew upgrade --all
 
 # Install Homebrew Cask
 brew tap caskroom/cask
 
 # Install wget with IRI support
 brew install wget --enable-iri
+
+# Install GNU core utilities (those that come with macOS are outdated).
+# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
+brew install coreutils
+ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
+
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
+brew install findutils
+
+# Install GNU `sed`, overwriting the built-in `sed`.
+brew install gnu-sed --with-default-names
+
+
+# Install more recent versions of some macOS tools.
+brew install vim --override-system-vi
+brew install homebrew/dupes/grep
+brew install homebrew/dupes/openssh
+brew install homebrew/dupes/screen
+brew install homebrew/php/php56 --with-gmp
 
 # Install everything else
 brew install ack # Awesome File Search
@@ -25,6 +44,7 @@ brew install webkit2png # Get Full Webpage Screenshots
 brew install postgres # PostgreSQL Database
 brew cask install caskroom/fonts/font-hack # Hack font
 brew cask install visual-studio-code # Visual Studio Code
+brew cask install sublime-text # Sublime Text
 
 # Remove outdated versions from the cellar
 brew cleanup
