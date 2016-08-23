@@ -1,0 +1,97 @@
+{
+	"auto_complete_commit_on_tab": false,
+	"auto_complete_delay": 20,
+	"binary_file_patterns":
+	[
+		"node_modules/"
+	],
+	"bold_folder_labels": true,
+	"caret_extra_width": 2,
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"drag_text": false,
+	"draw_indent_guides": true,
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": true,
+	"file_exclude_patterns":
+	[
+		".tags",
+		".tags_sorted_by_file",
+		".DS_Store",
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.sassc",
+		"*.scssc",
+		"*.pdb",
+		"*.idb",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-project",
+		"*.sublime-workspace",
+		"*.gem",
+		"*.gz",
+		"*.psd",
+		"*.xap",
+		"*.zip"
+	],
+	"fold_buttons": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".settings",
+		".idea",
+		".sass-cache",
+		".bin"
+	],
+	"font_face": "Hack",
+	"font_options":
+	[
+		"subpixel_antialias",
+		"gray_antialias"
+	],
+	"font_size": 14,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"indent_subsequent_lines": true,
+	"index_exclude_patterns":
+	[
+		"*.log",
+		"*.txt",
+		"*.json"
+	],
+	"itg_small_tabs": true,
+	"line_padding_bottom": 1.6,
+	"line_padding_top": 1.6,
+	"scroll_past_end": true,
+	"scroll_speed": 1.5,
+	"spell_check": false,
+	"tab_size": 2,
+	"theme": "Material-Theme-Darker.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": "false"
+}
