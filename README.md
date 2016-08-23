@@ -78,12 +78,6 @@ When setting up a new Mac, you may want to install some common Homebrew formulae
 sh ~/.brew
 ```
 
-### Install Ruby Gems
-
-```bash
-sh ~/.gems
-```
-
 ## I Like Feedback
 
 Suggestions
