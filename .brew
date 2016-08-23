@@ -20,7 +20,6 @@ brew install rename # Batch Renaming
 brew install tree # View Directory Tree
 brew install webkit2png # Get Full Webpage Screenshots
 brew install postgres # PostgreSQL Database
-brew install android-sdk # android sdk
 
 # Remove outdated versions from the cellar
 brew cleanup
