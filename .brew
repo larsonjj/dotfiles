@@ -34,6 +34,9 @@ brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 brew install homebrew/php/php56 --with-gmp
 
+## Install ZSH
+brew install zsh
+
 # Install everything else
 brew install ack # Awesome File Search
 brew install git # Git: Version Control
@@ -48,3 +51,7 @@ brew cask install sublime-text # Sublime Text
 
 # Remove outdated versions from the cellar
 brew cleanup
+
+# Set ZSH as shell
+chsh -s /usr/local/bin/zsh
+
