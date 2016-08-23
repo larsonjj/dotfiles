@@ -81,7 +81,7 @@ sh ~/.brew
 ### Install RVM (Ruby Version Manager)
 
 ```bash
-sh ~/.rvninstall
+sh ~/.rvminstall
 ```
 
 ### Install Ruby Gems
