@@ -102,15 +102,6 @@ else
     print "404: ~/.path not found."
 fi
 
-# CUSTOM PROFILE ADDITIONS
-
-if [ -f ~/.profile ]; then
-    source ~/.profile
-else
-    print "404: ~/.profile not found."
-fi
-
 # CUSTOM EXTRAS
 
-if [ -f ~/.extras ]; then
-    source ~/.extras
+source ~/.extras
